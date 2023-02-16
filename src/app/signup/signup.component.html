@@ -1,0 +1,73 @@
+<!-- <p>signup works!</p> -->
+<section>
+
+    <div class="container signup1">
+        <div class="row signup2">
+            <div class="col-md-6 offset-md-3">
+                <div class="my-card signup3">
+                    <div class="container text-center">
+                    <img style="width:110px;" alt="" src="../IMG/gggg.png">
+                    </div>
+                    <h1 class="text-center"><b><i>Medicare</i> Sign</b> Up</h1>
+                    <form #signup="ngForm" (ngSubmit)="onsubmit(signup.value)">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label> 
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="name"
+                                ngModel
+                                 placeholder="Enter Full Name"
+                                 required="required">
+                        </div>
+                            <div class="mb-3">
+                            <label for="phone" class="form-label">Mobile Number</label> 
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="phone"
+                                ngModel
+                                 placeholder="Enter Mobile Number"
+                                 required="required">
+                        </div>
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email</label> 
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="email"
+                                ngModel
+                                 placeholder="Enter Email"
+                                 required="required">
+                        </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Password</label> 
+                                <input 
+                                type="password" 
+                                class="form-control"
+                                name="password"
+                                ngModel
+                                 placeholder="Enter Password"
+                                 required="required">
+                        </div>
+                       
+                        <div class="form-group from-check text-center">
+                        <input type="checkbox"
+                        name="agreement"
+                        
+                        />
+                        <label for="agreement"> Accept Terms And Conditions</label>
+                        </div>
+                        
+                        <br>
+                       
+                        <button type="submit" class="signup5 btn-block">Sign Up</button>
+                        <button type="reset" class="signup6 btn-block ">Reset</button>
+  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<router-outlet></router-outlet>

@@ -1,0 +1,15 @@
+.cart {
+    width: 500px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+  }
+  
+  .cart-header {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    /* border-top-right- */
+  }  
