@@ -1,0 +1,45 @@
+<!-- <p>login works!</p> -->
+<section>
+
+    <div class="container login1">
+        <div class="row login2">
+            <div class="col-md-6 offset-md-3">
+                <div class="my-card login3">
+                    <div class="container text-center">
+                    <!-- <img style="width:110px;" alt="" src="../IMG/gggg.png"> -->
+                    </div>
+                    <h1 class="text-center"><b><i>Medicare Login In</i></b></h1>
+                    <form #login="ngForm" (ngSubmit)="onlogin(login.value)">
+                
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email</label> 
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="email"
+                                ngModel
+                                 placeholder="Enter Email"
+                                 required="required">
+                        </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Password</label> 
+                                <input 
+                                type="password" 
+                                class="form-control"
+                                name="password"
+                                ngModel
+                                 placeholder="Enter Password"
+                                 required="required">
+                        </div>
+                        <br>
+                        <b style="text-align: center; color: rgb(222, 246, 246); " class="login7 btn-block" ><i><b><h4><a href="admin">Admin Login</a></h4></b></i></b>
+                        <br>
+                        <button type="submit" class="login5 btn-block">Login In</button>
+                        <button type="reset" class="login6 btn-block ">Reset</button>
+  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

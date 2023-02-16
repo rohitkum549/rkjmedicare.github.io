@@ -1,0 +1,44 @@
+<!-- <p>admin works!</p> -->
+<section>
+
+    <div class="container adminlogin1">
+        <div class="row adminlogin2">
+            <div class="col-md-6 offset-md-3">
+                <div class="my-card adminlogin3">
+                    <div class="container text-center">
+                    <!-- <img style="width:110px;" alt="" src="../IMG/gggg.png"> -->
+                    </div>
+                    <h1 class="text-center"><b><i>Medicare Admin</i></b></h1>
+                    <form #adminlogin="ngForm" (ngSubmit)="onadminlogin(adminlogin.value)">
+                
+                            <div class="mb-3">
+                            <label for="email" class="form-label">Email</label> 
+                                <input 
+                                type="text" 
+                                class="form-control"
+                                name="email"
+                                ngModel
+                                 placeholder="Enter Email"
+                                 required="required">
+                        </div>
+                            <div class="mb-3">
+                            <label for="password" class="form-label">Password</label> 
+                                <input 
+                                type="password" 
+                                class="form-control"
+                                name="password"
+                                ngModel
+                                 placeholder="Enter Password"
+                                 required="required">
+                        </div>
+                        <br>
+                        <button type="submit" class="adminlogin5 btn-block">Admin Login In</button>
+                        <button type="reset" class="adminlogin6 btn-block ">Reset</button>
+  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<router-outlet></router-outlet>

@@ -1,0 +1,30 @@
+<!-- <p>medicine works!</p> -->
+<b><h1 style="text-align: center; color: rgb(165, 155, 42);">Medicine</h1></b>
+<hr>
+<section>
+    <div class="container">
+        <table class="table">
+            <thead>
+                <!-- <th>ProductID</th> -->
+                <th>Medicine Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Action</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of ProductArray">
+                    <!-- <td>{{item.id}}</td> -->
+                    <td>
+                        {{item.medicinename}}
+                    </td>
+                    <td>{{item.category}}</td>
+                    <td>{{item.price |currency:'INR'}}</td>
+                    <td><img src="../../+{{item.image}}" style="height: 110px; width: auto;"></td>
+                    <td><button type="button" class="btn btn-success" (click)="setBuy(item)" routerLink="edit" style="margin: 5px;" >Buy</button> 
+                        <button type="button" class="btn btn-danger" (click)="setCart(item)">Cart</button> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

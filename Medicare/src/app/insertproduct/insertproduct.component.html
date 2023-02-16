@@ -1,0 +1,58 @@
+<!-- <p>insertproduct works!</p> -->
+<div class="container ">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="my-card">
+        
+        
+          <div class="container text-center">
+          <img style="width:110px;" alt="" src="../IMG/gggg.png">
+          </div>
+          <h1 class="text-center"><b><i>💉💊🩺Medicine Update💉💊🩺</i></b></h1>
+          <form #food="ngForm" (ngSubmit)="onInsert(food.value)">
+            <div class="mb-3">
+              <label for="code" class="form-label"><h3>Medicine Name</h3></label> 
+                <input 
+                type="text" 
+                class="form-control"
+                name="medicinename"
+                ngModel
+                 placeholder="Medicine Name"
+                 required="required">
+            </div>            
+              <div class="mb-3">
+              <label for="name" class="form-label"><i><h3>Category</h3></i></label> 
+                <input 
+                type="text" 
+                class="form-control"
+                name="category"
+                ngModel
+                 placeholder="Category"
+                 required="required">
+            </div>           
+              <div class="mb-3">
+              <label for="brand" class="form-label"><h3>Price</h3></label> 
+                <input 
+                type="text" 
+                class="form-control"
+                name="price"
+                ngModel
+                 placeholder="$"
+                 required="required">
+            </div>
+            <div class="custom-file">
+            <label for="productImage" class="form-label"><h3>Image</h3></label> <br>
+            <input type="file" name="image" ngModel/>
+            </div>
+            <br>
+            <div class="container text-center">
+            <button type="submit" class="btn bg-primary btn-block text-white">Add Product</button>
+            <button type="reset" class="btn btn-warning btn-block text-white">Reset</button>
+            </div>           
+          </form>
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>

@@ -1,0 +1,22 @@
+.admin1
+{
+    background-color: antiquewhite;
+}
+.admin2
+{
+    color: brown;
+    text-align: center;
+    text-overflow: clip;
+}
+.admin3
+{
+    /* padding: 1px; */
+    /* display: flex; */
+    /* margin: 2px; */
+    /* border: 2px; */
+    background-color: antiquewhite;
+}
+.admin4
+{
+    background-color: antiquewhite;
+}
